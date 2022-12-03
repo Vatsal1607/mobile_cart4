@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_cart4/home_screen.dart';
+import 'package:mobile_cart4/root_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           elevation: 0.0,
         ),
-        body: const HomeScreen(),
+        body: const RootScreen(),
       ),
     );
   }

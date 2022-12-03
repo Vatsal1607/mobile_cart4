@@ -13,8 +13,8 @@ class Carousel extends StatelessWidget {
           height: 220.0,
           autoPlay: true,
           viewportFraction: 0.8,
-          autoPlayInterval: Duration(seconds: 2),
-          autoPlayAnimationDuration: Duration(milliseconds: 800),
+          autoPlayInterval: const Duration(seconds: 2),
+          autoPlayAnimationDuration: const Duration(milliseconds: 800),
           autoPlayCurve: Curves.fastOutSlowIn,
         ),
         items: [1,2,3,4,5].map((i) {
@@ -28,7 +28,7 @@ class Carousel extends StatelessWidget {
                   ),
                   child: Column(
                     children: [
-                      SizedBox(height: 9,),
+                      const SizedBox(height: 9,),
                       Padding(
                         padding: const EdgeInsets.all(4.0),
                         child: Container(

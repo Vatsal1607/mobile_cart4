@@ -15,8 +15,8 @@ class _SearchBarState extends State<SearchBar> {
         color: Colors.blue,
       ),
       child: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Container(
+        padding: const EdgeInsets.all(8.0),
+        child: SizedBox(
           height: 35,
           width: double.infinity,
           child: TextFormField(

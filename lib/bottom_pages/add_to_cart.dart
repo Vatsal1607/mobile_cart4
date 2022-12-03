@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+class AddToCart extends StatefulWidget {
+  const AddToCart({Key? key}) : super(key: key);
+
+  @override
+  State<AddToCart> createState() => _AddToCartState();
+}
+
+class _AddToCartState extends State<AddToCart> {
+
+  final int _itemCount = 10;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: _itemCount > 0
+          ? ListView.builder(
+          itemCount: _itemCount,
+          itemBuilder: (BuildContext context, int index){
+            return Card(
+              elevation: 3,
+              child: ListTile(
+                title: Text('Item name'),
+                subtitle: Text('Price'),
+                leading: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMghkBynw_Csi8Ua0h1fkYCsLTqfWNAXU7sg&usqp=CAU'),
+                trailing: Icon(Icons.cancel),
+              ),
+            );
+          },
+      ) : Text('Nothing to show yet'),
+    );
+  }
+}
