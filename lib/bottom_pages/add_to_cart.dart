@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_cart4/pages/next_add_to_cart.dart';
 
 class AddToCart extends StatefulWidget {
   const AddToCart({Key? key}) : super(key: key);
@@ -17,13 +18,18 @@ class _AddToCartState extends State<AddToCart> {
           ? ListView.builder(
           itemCount: _itemCount,
           itemBuilder: (BuildContext context, int index){
-            return Card(
-              elevation: 3,
-              child: ListTile(
-                title: Text('Item name'),
-                subtitle: Text('Price'),
-                leading: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMghkBynw_Csi8Ua0h1fkYCsLTqfWNAXU7sg&usqp=CAU'),
-                trailing: Icon(Icons.cancel),
+            return InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => NextAddToCart()));
+                },
+              child: Card(
+                elevation: 3,
+                child: ListTile(
+                  title: Text('Item name'),
+                  subtitle: Text('Price'),
+                  leading: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMghkBynw_Csi8Ua0h1fkYCsLTqfWNAXU7sg&usqp=CAU'),
+                  trailing: Icon(Icons.cancel),
+                ),
               ),
             );
           },

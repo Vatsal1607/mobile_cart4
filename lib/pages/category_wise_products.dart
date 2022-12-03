@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_cart4/pages/next_categorywise_product.dart';
 
 class CategoryWiseProduct extends StatelessWidget {
   const CategoryWiseProduct({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class CategoryWiseProduct extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.all(3.0),
                 child: Align(
-                  child: Text('Latest Products', style: TextStyle(
+                  child: Text('Category wise products', style: TextStyle(
                       fontSize: 18,
                       color: Colors.white
                   ),),
@@ -44,14 +45,7 @@ class CategoryWiseProduct extends StatelessWidget {
                         itemBuilder: (context,index){
                           return InkWell(
                             onTap: (){
-                              // Navigator.push(context, MaterialPageRoute(builder: (context)=>Description(
-                              //     name: "marvel?[index]['m_title']",
-                              //     bannerurl: "http://192.168.0.104:3000/images/",
-                              //     posterurl: "http://192.168.0.104:3000/images/",
-                              //     description: "marvel?[index]['m_description']",
-                              //     vote: "marvel?[index]['m_rating'].toString()",
-                              //     luanch_on: "marvel?[index]['m_releaseDate']"
-                              // )));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=> const NextCategorywiseProduct()));
                             },
                             child: Card(
                               elevation: 5,

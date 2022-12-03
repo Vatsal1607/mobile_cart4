@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_cart4/pages/next_latest_product.dart';
 
 class LatestProduct extends StatelessWidget {
   const LatestProduct({Key? key}) : super(key: key);
@@ -44,14 +45,7 @@ class LatestProduct extends StatelessWidget {
                     itemBuilder: (context,index){
                       return InkWell(
                         onTap: (){
-                          // Navigator.push(context, MaterialPageRoute(builder: (context)=>Description(
-                          //     name: "marvel?[index]['m_title']",
-                          //     bannerurl: "http://192.168.0.104:3000/images/",
-                          //     posterurl: "http://192.168.0.104:3000/images/",
-                          //     description: "marvel?[index]['m_description']",
-                          //     vote: "marvel?[index]['m_rating'].toString()",
-                          //     luanch_on: "marvel?[index]['m_releaseDate']"
-                          // )));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => NextLatestProduct()));
                         },
                         child: Card(
                           elevation: 5,
