@@ -4,7 +4,6 @@ import 'package:mobile_cart4/root_screen.dart';
 
 void main() => runApp(const MyApp());
 
-
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 

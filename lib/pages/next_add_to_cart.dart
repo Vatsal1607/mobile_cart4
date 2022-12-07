@@ -76,7 +76,7 @@ class _NextAddToCartState extends State<NextAddToCart> {
                             color: Colors.yellow,
                             borderRadius: BorderRadius.circular(20)
                         ),
-                        child: Center(child: Text('Add to Cart', style: TextStyle(
+                        child: const Center(child: Text('Add to Cart', style: TextStyle(
                             fontSize: 18
                         ),)),
                       ),
@@ -94,7 +94,7 @@ class _NextAddToCartState extends State<NextAddToCart> {
                             color: Colors.orange,
                             borderRadius: BorderRadius.circular(20)
                         ),
-                        child: Center(child: Text('Buy Now', style: TextStyle(
+                        child: const Center(child: Text('Buy Now', style: TextStyle(
                             fontSize: 18
                         ),)),
                       ),

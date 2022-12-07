@@ -33,7 +33,13 @@ class _AddToCartState extends State<AddToCart> {
               ),
             );
           },
-      ) : Text('Nothing to show yet'),
+      ) : Center(child: Text('Nothing to show yet', style: TextStyle(
+          color: Colors.black54,
+          fontSize: 25,
+          fontWeight: FontWeight.bold
+          ),
+        ),
+      ),
     );
   }
 }
